@@ -14,7 +14,6 @@ export default function DeleteProjectModal() {
         password: ''
     }
     const navigate = useNavigate()
-
     const queryParams = new URLSearchParams(location.search);
     const deleteProjectId = queryParams.get('deleteProject')!;
     const show = deleteProjectId ? true : false
